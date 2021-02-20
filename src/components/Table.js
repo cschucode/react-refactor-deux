@@ -19,10 +19,12 @@ const Table = () => {
     return (
         <table className="table">
             <thead>
-                <tr><th className="table-header">Name</th></tr>
-                <tr><th className="table-header">Population</th></tr>
-                <tr><th className="table-header">Region</th></tr>
-                <tr><th className="table-header">Timezones</th></tr>
+                <tr>
+                    <th className="table-header">Name</th>
+                    <th className="table-header">Population</th>
+                    <th className="table-header">Region</th>
+                    <th className="table-header">Timezones</th>
+                </tr>       
             </thead>
             <tbody>
                 {data.map((row, idx) => {
