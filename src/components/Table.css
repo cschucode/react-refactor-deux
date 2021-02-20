@@ -1,0 +1,17 @@
+.cell {
+    font-family: 'Arial';
+    border: 1px solid #ddd;
+    padding: 5;
+    text-align: left;
+}
+
+.table {
+    font-family: 'Arial';
+    font-size: 20;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-header {
+    font-weight: bold;
+}

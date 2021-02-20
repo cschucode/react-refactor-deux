@@ -1,24 +1,26 @@
 module.exports = {
-    "parser": "babel-eslint",
     "env": {
-      "browser": true,
-      "node": true
+        "browser": true,
+        "es6": true
     },
-    "extends": "airbnb",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
     "rules": {
-      "semi": [2, "never"],
-      "camelcase": "off",
-      "jsx-a11y/anchor-is-valid": [ "error", { "components": [ "Link" ], "specialLink": [ "to" ] } ],
-      "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-      "max-len": [
-        2,
-        120,
-        2
-      ],
-      "react/jsx-filename-extension": "off",
-      "import/no-unresolved": "off",
-      "import/extensions": "never",
-      "react/forbid-prop-types": "off",
-      "react/prefer-stateless-function": "off",
     }
 };
